@@ -1,0 +1,66 @@
+
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand main" href="/home">GetMeRoof</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li [routerLinkActive] = "['active']" class="nav-item ">
+            <a  [routerLink]="['/home']" class="nav-link" href="/home">HOME</a>
+          </li>
+
+          <!--multi sort  start-->
+     <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CustomSort Multi</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <label class = "droplabel label">SortByAscending</label> <hr class = "line">
+              <a  [routerLink]="['/distance/asce/all']"class="dropdown-item content" href="/distance/asce/all">SortByDistance</a>
+              <a [routerLink]="['/rate/asce/all']" class="dropdown-item content" href="/rate/asce/all">SortByRate</a>
+              <a [routerLink]="['/size/asce/all']" class="dropdown-item content" href="size/asce/all">SortBySize</a>
+              <a  [routerLink]="['/date/asce/all']" class="dropdown-item content" href="/date/asce/all">SortByDate</a>
+              
+              
+              <label class = "droplabel">SortByDescending</label> <hr class = "line">
+              <a  [routerLink]="['/distance/desc/all']"class="dropdown-item content" href="/distance/desc/all">SortByDistance</a>
+              <a [routerLink]="['/rate/desc/all']" class="dropdown-item content" href="/rate/desc/all">SortByRate</a>
+              <a [routerLink]="['/size/desc/all']" class="dropdown-item content" href="size/desc/all">SortBySize</a>
+              <a  [routerLink]="['/date/desc/all']" class="dropdown-item content" href="/date/desc/all">SortByDate</a>
+            </div>
+          </li>
+          <!--multi sort  end-->
+
+<!--single sort  start-->
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CustomSort Single</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <label class = "droplabel">SortByAscending</label><hr class = "line">
+              <a  [routerLink]="['/distance/asce/one']"class="dropdown-item content" href="/distance/asce/one">SortByDistance</a>
+              <a [routerLink]="['/rate/asce/one']" class="dropdown-item content" href="/rate/asce/one">SortByRate</a>
+              <a [routerLink]="['/size/asce/one']" class="dropdown-item content" href="size/asce/one">SortBySize</a>
+              <a  [routerLink]="['/date/asce/one']" class="dropdown-item content" href="/date/asce/one">SortByDate</a>
+
+               
+              <label class = "droplabel">SortByDescending</label><hr class = "line">
+              <a  [routerLink]="['/distance/desc/one']"class="dropdown-item content" href="/distance/desc/one">SortByDistance</a>
+              <a [routerLink]="['/rate/desc/one']" class="dropdown-item content" href="/rate/desc/one">SortByRate</a>
+              <a [routerLink]="['/size/desc/one']" class="dropdown-item content" href="size/desc/one">SortBySize</a>
+              <a  [routerLink]="['/date/desc/one']" class="dropdown-item content" href="/date/desc/one">SortByDate</a>
+            </div>
+          </li>
+        <!--single sort  end-->  
+
+
+      </ul>
+
+          <ul class = "nav navbar-nav navbar-right">
+          <li [routerLinkActive] = "['active']" class="nav-item">
+            <a [routerLink]="['/projects']" class="nav-link" href="/projects">PROJECTS</a>
+          </li>
+          <li [routerLinkActive] = "['active']" class="nav-item">
+            <a [routerLink]="['/register']" class="nav-link" href="/register">REGISTER</a>
+          </li>
+          
+         </ul>
+          </div>
+    </nav>

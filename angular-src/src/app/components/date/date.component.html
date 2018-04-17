@@ -1,0 +1,30 @@
+
+<app-navbar></app-navbar>
+<div class = "container-fluid">
+  <h1>Roofs Sorted By Date Of Complition</h1><br><br>
+<table class ="table table-hover tab">
+
+    <thead class ="head">
+      <th>Distance</th> 
+      <th>Rate</th> 
+      <th>ProjectSize</th> 
+      <th>DateOfComplition</th> 
+    </thead>
+
+    <tbody>
+       <tr *ngFor ="let date of Date">
+         <td>{{date.Distance}}</td>
+         <td>{{date.Rate}}</td>
+         <td>{{date.ProjectSize}}</td>
+         <td class="datefield">{{date.DateOfComplition}}</td>
+       </tr>
+    </tbody>
+    
+<table>
+  
+
+      
+      
+      
+      
+          

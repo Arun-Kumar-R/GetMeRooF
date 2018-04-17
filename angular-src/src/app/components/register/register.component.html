@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<div class = "container">
+<h2 class ="paeg-header">Register</h2>
+
+<form (submit)="onRegisterSubmit()">
+  <div class = "form-group">
+    <label>Distance:</label>
+    <input type="number" [(ngModel)]= "Distance" name = "Distance" class = "form-control">
+  </div>
+
+  <div class = "form-group">
+    <label>Rate:</label>
+    <input type="number"  [(ngModel)]= "Rate" name = "Rate" class = "form-control">
+  </div>
+
+  <div class = "form-group">
+    <label>ProjectSize:</label>
+    <input type="number"  [(ngModel)]= "ProjectSize" name = "ProjectSize" class = "form-control">
+  </div>
+
+  <div class = "form-group">
+    <label>DateOfComplition:</label>
+    <input type="date"  [(ngModel)]= "DateOfComplition" name = "DateOfComplition" class = "form-control">
+  </div>
+
+  <input type = "submit" class = "btn btn-primary " value = "Submit">
+</form>
+</div>

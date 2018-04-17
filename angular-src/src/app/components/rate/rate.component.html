@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+
+<div class = "container-fluid">
+  <h1>Roofs Sorted By Rate</h1><br><br>
+<table class ="table table-hover tab">
+
+    <thead class = "head">
+      <th>Distance</th> 
+      <th>Rate</th> 
+      <th>ProjectSize</th> 
+      <th>DateOfComplition</th> 
+    </thead>
+
+    <tbody>
+       <tr *ngFor ="let R of Rate">
+         <td>{{R.Distance}}</td>
+         <td class="ratefield">{{R.Rate}}</td>
+         <td>{{R.ProjectSize}}</td>
+         <td>{{R.DateOfComplition}}</td>
+       </tr>
+    </tbody>
+    
+<table>
+  
