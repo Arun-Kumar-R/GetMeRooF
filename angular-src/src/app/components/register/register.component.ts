@@ -43,7 +43,7 @@ return false;
       if(data.success){
          console.log("success");
          alert("you are now registered");
-         this.router.navigate(['/home']);
+         this.router.navigate(['/projects']);
       }else{
        console.log("failed");
          alert("you are falied to registered");
