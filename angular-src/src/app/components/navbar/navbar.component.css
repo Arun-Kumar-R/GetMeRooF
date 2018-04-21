@@ -1,24 +1,17 @@
-.droplabel{
-   color: lime;
-   text-align: center;
-   padding: 2px;
+.highlight :hover{
+    background-color: lightgray;
+    border:none;
+    border-radius: 10px;
+    color:green;
+    width: 150px;
+    height: 40px;
+    text-align: center;
 }
-.line{
-    margin-top: 5px;
-    color:red;
+.navborder{
+    border-radius: 8px;
+    margin-top: 3px;
 }
-.main:a{
-    color: lime;
-    font-weight: bold;
-}
-.line{
-    color: red;
-    size:2px;
-}
-.content{
-    color:black;
-    padding: 2px;
-}
-.content a :hover{
-    background-color: lightgreen;
+.main{
+    font-family: 'kotta one',serif;
+    font-size: 22px;
 }

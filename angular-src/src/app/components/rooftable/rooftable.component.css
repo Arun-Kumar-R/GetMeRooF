@@ -1,0 +1,41 @@
+.container{
+    margin-top: 40px;
+    padding-top: 50px;
+    background-color: whitesmoke;
+    font-family: 'kotta one',serif;
+}
+.tab
+{
+border: 2px solid black;
+
+}
+.header{
+    font-size: 23px;
+    font-weight: bold;
+    color: rgba(14,20,167,0.3);
+    font-family: 'kotta one',serif;
+     background-color: whitesmoke;
+}
+.header:hover{
+    color:red;
+    font-size: 25px;
+}
+.heading{
+    background-color:#736aff; 
+    text-align: center;
+    color:white;
+    margin-top: 80px;
+    font-family: 'kotta one',serif;
+}
+h3{
+    padding:20px;
+    
+}
+.content
+{
+    font-family: 'kotta one',serif;
+    font-size:20px;
+    color:lime;
+    font-weight: bold;
+   
+}

@@ -1,0 +1,36 @@
+
+<app-navbar></app-navbar>
+<div class="heading">
+    <h3>SORTING TABLE</h3>
+  </div>
+  
+<div class = "container">
+  
+  <mat-table [dataSource]="dataSource" matSort matsortActive="Distance" matSortDirection="asc" matSortDisableClear class = "tab">
+    <ng-container matColumnDef ="Distance">
+      <mat-header-cell *matHeaderCellDef mat-sort-header class= "header">Distance</mat-header-cell>
+      <mat-cell *matCellDef ="let user " class ="content">{{user.Distance}}</mat-cell>
+    </ng-container>
+
+     <ng-container matColumnDef ="Rate">
+      <mat-header-cell *matHeaderCellDef mat-sort-header  class= "header">Rate</mat-header-cell>
+      <mat-cell *matCellDef ="let user" class ="content">{{user.Rate}}</mat-cell>
+    </ng-container>
+
+     <ng-container matColumnDef ="ProjectSize">
+      <mat-header-cell *matHeaderCellDef mat-sort-header  class= "header">ProjectSize</mat-header-cell>
+      <mat-cell *matCellDef ="let user" class ="content">{{user.ProjectSize}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef ="DateOfComplition">
+      <mat-header-cell *matHeaderCellDef mat-sort-header  class= "header">DateOfComplition</mat-header-cell>
+      <mat-cell *matCellDef ="let user" class ="content">{{user.DateOfComplition}}</mat-cell>
+    </ng-container>
+
+      <mat-header-row *matHeaderRowDef="displayedColumns" color="primary"></mat-header-row>
+      <mat-row *matRowDef="let row; columns:displayedColumns"></mat-row>
+  </mat-table>
+</div>
+
+
+
