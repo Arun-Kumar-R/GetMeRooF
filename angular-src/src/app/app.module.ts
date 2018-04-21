@@ -20,11 +20,6 @@ import {ValidateService} from './services/validate.service';
 import {AuthService} from './services/auth.service';
 
 
-
-
-
-
-
 const appRoutes: Routes = [
   {
     path:'',component:HomeComponent
